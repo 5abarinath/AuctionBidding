@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body 
+{
+    background: #ADD8E6;
+}
+.form_bg 
+{
+    background-color:   #20B2AA;
+    color:#666;
+    padding:20px;
+    border-radius:10px;
+    position: absolute;
+    border:1px solid #fff;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 480px;
+    height: 480px;
+}
+.align-center 
+{
+    text-align:center;
+}
+</style>
+
+<script>
+    
+    function start()
+    {
+        window.location.href = "startSlot.php";
+    }
+</script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+    	<center><h1>ACE CRICKET LEAGUE</h1></center>
+        <div class="form_bg">
+           <br>
+            <form action="bidding.php" method="post">
+                 <h2 class="text-center"><b>Enter all Team Names</b></h2>
+                <br/>
+                <div class="form-group">
+                    <input type="name" class="form-control" id="name1" name="name1" placeholder="Team Name 1" required autocomplete="off">
+                    <input type="name" class="form-control" id="name2" name="name2" placeholder="Team Name 2" required autocomplete="off">
+                    <input type="name" class="form-control" id="name3" name="name3" placeholder="Team Name 3" required autocomplete="off">
+                    <input type="name" class="form-control" id="name4" name="name4" placeholder="Team Name 4" required autocomplete="off">
+                    <input type="name" class="form-control" id="name5" name="name5" placeholder="Team Name 5" required autocomplete="off">
+                    <input type="name" class="form-control" id="name6" name="name6" placeholder="Team Name 6" required autocomplete="off">
+                </div>
+                <div >
+                	
+                </div>
+            </form>
+            <center><button  class="btn btn-warning btn-lg" id="login" onClick="start();">Login</button></center>
+        </div>
+    </div>
+</div>
+
+</body>
